@@ -3,123 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Longneck44</title>
+    <title>Welcome to Longneck44.com</title>
     <style>
-        /* Base styles */
         body {
             margin: 0;
-            padding: 0;
-            background: #000;
-            color: #fff;
+            padding: 20px;
+            background-color: black;
             font-family: Arial, sans-serif;
+            color: #FF6600;
         }
-        
-        /* Header */
-        .header {
-            background: #1f2937;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        
-        .header h1 {
-            color: #ff6600;
-            font-size: 48px;
-            margin: 0;
-        }
-        
-        .header p {
-            color: #fff;
-            font-size: 24px;
-            margin: 10px 0 0;
-        }
-        
-        /* Content */
-        .content {
+
+        .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
         }
-        
-        /* Images */
+
+        h1 {
+            text-align: center;
+            color: #FF6600;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
         }
-        
-        .image-wrap {
-            aspect-ratio: 1;
-            border-radius: 50%;
+
+        .image-circle {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
             overflow: hidden;
-            border: 2px solid #fff;
+            border-radius: 50%;
+            background: white;
         }
-        
-        .image-wrap img {
+
+        .image-circle img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
-        /* Text */
-        .info {
+
+        .info-section {
             text-align: center;
-            color: #ff6600;
-            font-size: 24px;
-            margin: 30px 0;
+            margin: 40px 0;
         }
-        
-        /* Links */
-        .link {
-            text-align: center;
-            margin: 20px 0;
+
+        .info-section h2 {
+            color: #FF6600;
+            font-size: 1.8em;
+            margin-bottom: 10px;
         }
-        
-        .link a {
-            color: #ff6600;
+
+        .info-section p {
+            font-size: 1.4em;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #FF6600;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .mascot {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .mascot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Welcome to Longneck44</h1>
-        <p>Your Home Away from Home in Utah</p>
-    </div>
-
-    <div class="content">
-        <div class="info">
-            Mid-Term Rental for Traveling Professionals<br>
-            13-26 Week Stays
-        </div>
-
+    <div class="container">
+        <h1>Welcome to Longneck44.com</h1>
+        
         <div class="image-grid">
-            <div class="image-wrap">
-                <img src="images/Exterior #18.jpg" alt="Exterior">
+            <div class="image-circle">
+                <img src="images/Entry.jpg" alt="Entry View">
             </div>
-           <div class="image-wrap">
+            <div class="image-circle">
                 <img src="images/Living Room.jpg" alt="Living Room">
             </div>
-            <div class="image-wrap">
-                <img src="images/Dining Area.jpg" alt="Dining Area">
+            <div class="image-circle">
+                <img src="images/Master Bedroom.jpg" alt="Master Bedroom">
             </div>
-            <div class="image-wrap">
-                <img src="images/Kitchen.jpg" alt="Kitchen">
-            </div>
-            <div class="image-wrap">
-                <img src="images/Entry.jpg" alt="Entry">
-            </div>
-            <div class="image-wrap">
-                <img src="images/Laundry.jpg" alt="Laundry">
+            <div class="image-circle">
+                <img src="images/Master Bath.jpg" alt="Master Bathroom">
             </div>
         </div>
 
-        <div class="link">
-            <a href="https://www.furnishedfinder.com/property/354800_1">View on Furnished Finder</a>
+        <div class="info-section">
+            <h2>Mid-Term Rental</h2>
+            <p>For Traveling Professionals</p>
+            <p>13-26 Weeks</p>
+            <p><a href="https://www.furnishedfinder.com/property/354800_1" target="_blank" rel="noopener noreferrer">See our listing on Furnished Finder</a></p>
+            <p>Contact: <a href="mailto:Wade@longneck44.com">Wade@longneck44.com</a></p>
         </div>
 
-        <div class="link">
-            <a href="mailto:Wade@longneck44.com">Contact: Wade@longneck44.com</a>
+        <div class="mascot">
+            <img src="/api/placeholder/200/200" alt="Giraffe Mascot">
         </div>
     </div>
 </body>
