@@ -3,191 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Longneck44 - Mid-Term Rental for Traveling Professionals</title>
+    <title>Welcome to Longneck44</title>
     <style>
-        :root {
-            --primary-color: #ff6b35;
-            --secondary-color: #2e4057;
-            --text-color: #333;
-            --background-color: #f5f5f5;
-        }
-
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
         }
-
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
+        
+        .header {
+            background-color: #1f2937;
+            text-align: center;
+            padding: 50px 20px;
         }
-
-        .container {
+        
+        .header h1 {
+            color: #ff6600;
+            font-size: 48px;
+            margin: 0;
+        }
+        
+        .header p {
+            color: #fff;
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+        
+        .main-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 40px 20px;
         }
-
-        header {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-
-        .hero {
-            background-color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .gallery {
+        
+        .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
         }
-
-        .gallery img {
+        
+        .circular-image {
             width: 100%;
-            height: 300px;
+            padding-bottom: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .circular-image img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
-        .cta-section {
-            background-color: white;
-            padding: 4rem 0;
+        
+        .rental-info {
             text-align: center;
+            color: #ff6600;
+            font-size: 24px;
+            margin: 40px 0;
         }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background-color: var(--primary-color);
-            color: white;
+        
+        .rental-info p {
+            margin: 10px 0;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .contact-info a {
+            color: #ff6600;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            margin: 1rem;
-            transition: background-color 0.3s ease;
         }
-
-        .cta-button:hover {
-            background-color: #e55a2b;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .contact-form h3 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: var(--secondary-color);
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
+        
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to Longneck44</h1>
-            <p>Your Home Away from Home in Utah</p>
-        </div>
-    </header>
+    <div class="header">
+        <h1>Welcome to Longneck44</h1>
+        <p>Your Home Away from Home in Utah</p>
+    </div>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Mid-Term Rental for Traveling Professionals</h2>
-            <p>Available for 13-26 Week Stays</p>
-            <div class="gallery">
-                <img src="/api/placeholder/400/300" alt="Property Exterior">
-                <img src="/api/placeholder/400/300" alt="Living Room">
-                <img src="/api/placeholder/400/300" alt="Dining Area">
+    <div class="main-content">
+        <div class="rental-info">
+            <p>Mid-Term Rental for Traveling Professionals</p>
+            <p>13-26 Weeks</p>
+        </div>
+
+        <div class="image-grid">
+            <div class="circular-image">
+                <img src="images/exterior.jpg" alt="Property Exterior">
+            </div>
+            <div class="circular-image">
+                <img src="images/living-room.jpg" alt="Living Room">
+            </div>
+            <div class="circular-image">
+                <img src="images/dining.jpg" alt="Dining Area">
+            </div>
+            <div class="circular-image">
+                <img src="images/kitchen.jpg" alt="Kitchen">
             </div>
         </div>
-    </section>
 
-    <section class="cta-section">
-        <div class="container">
-            <a href="https://www.furnishedfinder.com/property/354800_1" class="cta-button">View on Furnished Finder</a>
-            
-            <div class="contact-form">
-                <h3>Contact Us</h3>
-                <form action="mailto:Wade@longneck44.com" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-            </div>
+        <div class="rental-info">
+            <p>See our listing on Furnished Finder</p>
+            <a href="https://www.furnishedfinder.com/property/354800_1" style="color: #ff6600;">
+                https://www.furnishedfinder.com/property/354800_1
+            </a>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>Contact: Wade@longneck44.com</p>
+        <div class="contact-info">
+            <p>Contact</p>
+            <a href="mailto:Wade@longneck44.com">Wade@longneck44.com</a>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
