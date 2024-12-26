@@ -11,12 +11,14 @@
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
         
         .header {
             background-color: #1f2937;
             text-align: center;
             padding: 50px 20px;
+            margin-bottom: 40px;
         }
         
         .header h1 {
@@ -37,6 +39,13 @@
             padding: 40px 20px;
         }
         
+        .subtitle {
+            text-align: center;
+            font-size: 32px;
+            color: #1f2937;
+            margin: 40px 0;
+        }
+        
         .image-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -44,16 +53,14 @@
             margin: 40px 0;
         }
         
-        .circular-image {
-            width: 100%;
-            padding-bottom: 100%;
+        .image-container {
+            aspect-ratio: 1;
             border-radius: 50%;
             overflow: hidden;
-            position: relative;
+            border: 3px solid #fff;
         }
         
-        .circular-image img {
-            position: absolute;
+        .image-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -73,15 +80,29 @@
         .contact-info {
             text-align: center;
             margin-top: 40px;
+            font-size: 24px;
         }
         
         .contact-info a {
             color: #ff6600;
             text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
         }
         
         .contact-info a:hover {
             text-decoration: underline;
+        }
+
+        .furnished-finder-link {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .furnished-finder-link a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -98,29 +119,25 @@
         </div>
 
         <div class="image-grid">
-            <div class="circular-image">
-                <img src="images/exterior.jpg" alt="Property Exterior">
+            <div class="image-container">
+                <img src="./images/exterior.jpg" alt="Property Exterior View">
             </div>
-            <div class="circular-image">
-                <img src="images/living-room.jpg" alt="Living Room">
+            <div class="image-container">
+                <img src="./images/living.jpg" alt="Living Room">
             </div>
-            <div class="circular-image">
-                <img src="images/dining.jpg" alt="Dining Area">
-            </div>
-            <div class="circular-image">
-                <img src="images/kitchen.jpg" alt="Kitchen">
+            <div class="image-container">
+                <img src="./images/dining.jpg" alt="Dining Area">
             </div>
         </div>
 
-        <div class="rental-info">
-            <p>See our listing on Furnished Finder</p>
-            <a href="https://www.furnishedfinder.com/property/354800_1" style="color: #ff6600;">
-                https://www.furnishedfinder.com/property/354800_1
+        <div class="furnished-finder-link">
+            <a href="https://www.furnishedfinder.com/property/354800_1" target="_blank">
+                View Our Property on Furnished Finder
             </a>
         </div>
 
         <div class="contact-info">
-            <p>Contact</p>
+            <p>Contact Us</p>
             <a href="mailto:Wade@longneck44.com">Wade@longneck44.com</a>
         </div>
     </div>
