@@ -11,20 +11,20 @@
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
         }
         
         .header {
             background-color: #1f2937;
             text-align: center;
-            padding: 50px 20px;
-            margin-bottom: 40px;
+            padding: 40px 20px;
+            margin-bottom: 0;
         }
         
         .header h1 {
             color: #ff6600;
             font-size: 48px;
             margin: 0;
+            font-weight: 600;
         }
         
         .header p {
@@ -36,73 +36,83 @@
         .main-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .subtitle {
-            text-align: center;
-            font-size: 32px;
-            color: #1f2937;
-            margin: 40px 0;
-        }
-        
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        .image-container {
-            aspect-ratio: 1;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid #fff;
-        }
-        
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            padding: 20px;
         }
         
         .rental-info {
             text-align: center;
             color: #ff6600;
-            font-size: 24px;
+            font-size: 28px;
+            margin: 30px 0;
+            line-height: 1.4;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 20px;
             margin: 40px 0;
         }
         
-        .rental-info p {
-            margin: 10px 0;
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         
-        .contact-info {
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .furnished-finder {
             text-align: center;
-            margin-top: 40px;
+            margin: 40px 0;
+            padding: 20px;
+        }
+        
+        .furnished-finder a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ff6600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .furnished-finder a:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+        
+        .contact {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            color: #ff6600;
             font-size: 24px;
         }
         
-        .contact-info a {
+        .contact a {
             color: #ff6600;
             text-decoration: none;
             display: inline-block;
             margin-top: 10px;
         }
         
-        .contact-info a:hover {
+        .contact a:hover {
             text-decoration: underline;
-        }
-
-        .furnished-finder-link {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .furnished-finder-link a {
-            color: #ff6600;
-            text-decoration: none;
-            font-size: 18px;
         }
     </style>
 </head>
@@ -115,28 +125,37 @@
     <div class="main-content">
         <div class="rental-info">
             <p>Mid-Term Rental for Traveling Professionals</p>
-            <p>13-26 Weeks</p>
+            <p>13-26 Week Stays</p>
         </div>
 
         <div class="image-grid">
             <div class="image-container">
-                <img src="./images/exterior.jpg" alt="Property Exterior View">
+                <img src="./images/Exterior #18.jpg" alt="Property Exterior">
             </div>
             <div class="image-container">
-                <img src="./images/living.jpg" alt="Living Room">
+                <img src="./images/Entry.jpg" alt="Entry Way">
             </div>
             <div class="image-container">
-                <img src="./images/dining.jpg" alt="Dining Area">
+                <img src="./images/Living Room.jpg" alt="Living Room">
+            </div>
+            <div class="image-container">
+                <img src="./images/Dining Area.jpg" alt="Dining Area">
+            </div>
+            <div class="image-container">
+                <img src="./images/Kitchen.jpg" alt="Kitchen">
+            </div>
+            <div class="image-container">
+                <img src="./images/Laundry.jpg" alt="Laundry Room">
             </div>
         </div>
 
-        <div class="furnished-finder-link">
+        <div class="furnished-finder">
             <a href="https://www.furnishedfinder.com/property/354800_1" target="_blank">
-                View Our Property on Furnished Finder
+                View on Furnished Finder
             </a>
         </div>
 
-        <div class="contact-info">
+        <div class="contact">
             <p>Contact Us</p>
             <a href="mailto:Wade@longneck44.com">Wade@longneck44.com</a>
         </div>
