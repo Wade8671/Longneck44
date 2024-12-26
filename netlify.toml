@@ -2,19 +2,12 @@
   publish = "/"
   command = ""
 
-[dev]
-  framework = "#static"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-[build.processing]
-  skip_processing = false
-
-[build.processing.html]
-  pretty_urls = true
-
-[build.processing.images]
-  compress = true
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate" 

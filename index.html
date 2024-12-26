@@ -3,45 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Longneck44.com</title>
+    <title>Welcome to Longneck44</title>
     <style>
         body {
             margin: 0;
-            padding: 20px;
-            background-color: black;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
             font-family: Arial, sans-serif;
-            color: #FF6600;
         }
-
-        .container {
+        
+        .header {
+            background-color: #1f2937;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 0;
+        }
+        
+        .header h1 {
+            color: #ff6600;
+            font-size: 48px;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .header p {
+            color: #fff;
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+        
+        .main-content {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
         }
-
-        h1 {
+        
+        .rental-info {
             text-align: center;
-            color: #FF6600;
-            font-size: 2.5em;
-            margin-bottom: 40px;
+            color: #ff6600;
+            font-size: 28px;
+            margin: 30px 0;
+            line-height: 1.4;
         }
-
+        
         .image-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
+            gap: 40px;
+            padding: 20px;
+            margin: 40px 0;
         }
-
-        .image-circle {
-            width: 100%;
-            padding-top: 100%;
+        
+        .image-container {
             position: relative;
-            overflow: hidden;
+            width: 100%;
+            padding-bottom: 100%;
             border-radius: 50%;
-            background: white;
+            overflow: hidden;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-
-        .image-circle img {
+        
+        .image-container img {
             position: absolute;
             top: 0;
             left: 0;
@@ -49,78 +73,91 @@
             height: 100%;
             object-fit: cover;
         }
-
-        .info-section {
+        
+        .furnished-finder {
             text-align: center;
             margin: 40px 0;
+            padding: 20px;
         }
-
-        .info-section h2 {
-            color: #FF6600;
-            font-size: 1.8em;
-            margin-bottom: 10px;
-        }
-
-        .info-section p {
-            font-size: 1.4em;
-            margin: 10px 0;
-        }
-
-        a {
-            color: #FF6600;
+        
+        .furnished-finder a {
+            color: #ff6600;
             text-decoration: none;
+            font-size: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ff6600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
-
-        a:hover {
+        
+        .furnished-finder a:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+        
+        .contact {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            color: #ff6600;
+            font-size: 24px;
+        }
+        
+        .contact a {
+            color: #ff6600;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .contact a:hover {
             text-decoration: underline;
-        }
-
-        .mascot {
-            position: fixed;
-            right: 20px;
-            top: 20px;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-
-        .mascot img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Longneck44.com</h1>
-        
+    <div class="header">
+        <h1>Welcome to Longneck44</h1>
+        <p>Your Home Away from Home in Utah</p>
+    </div>
+
+    <div class="main-content">
+        <div class="rental-info">
+            <p>Mid-Term Rental for Traveling Professionals</p>
+            <p>13-26 Week Stays</p>
+        </div>
+
         <div class="image-grid">
-            <div class="image-circle">
-                <img src="images/entry.jpg" alt="Entry View">
+            <div class="image-container">
+                <img src="./images/Exterior #18.jpg" alt="Property Exterior">
             </div>
-            <div class="image-circle">
-                <img src="images/living_room.jpg" alt="Living Room">
+            <div class="image-container">
+                <img src="./images/Entry.jpg" alt="Entry Way">
             </div>
-            <div class="image-circle">
-                <img src="images/master_bedroom.jpg" alt="Master Bedroom">
+            <div class="image-container">
+                <img src="./images/Living Room.jpg" alt="Living Room">
             </div>
-            <div class="image-circle">
-                <img src="images/master_bath.jpg" alt="Master Bathroom">
+            <div class="image-container">
+                <img src="./images/Dining Area.jpg" alt="Dining Area">
+            </div>
+            <div class="image-container">
+                <img src="./images/Kitchen.jpg" alt="Kitchen">
+            </div>
+            <div class="image-container">
+                <img src="./images/Laundry.jpg" alt="Laundry Room">
             </div>
         </div>
 
-        <div class="info-section">
-            <h2>Mid-Term Rental</h2>
-            <p>For Traveling Professionals</p>
-            <p>13-26 Weeks</p>
-            <p><a href="https://www.furnishedfinder.com/property/354800_1" target="_blank" rel="noopener noreferrer">See our listing on Furnished Finder</a></p>
-            <p>Contact: <a href="mailto:Wade@longneck44.com">Wade@longneck44.com</a></p>
+        <div class="furnished-finder">
+            <a href="https://www.furnishedfinder.com/property/354800_1" target="_blank">
+                View on Furnished Finder
+            </a>
         </div>
 
-        <div class="mascot">
-            <img src="/api/placeholder/200/200" alt="Giraffe Mascot">
+        <div class="contact">
+            <p>Contact Us</p>
+            <a href="mailto:Wade@longneck44.com">Wade@longneck44.com</a>
         </div>
     </div>
 </body>
