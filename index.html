@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Longneck44</title>
     <style>
+        /* Base styles */
         body {
             margin: 0;
             padding: 0;
-            background-color: #000;
+            background: #000;
             color: #fff;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
         }
         
+        /* Header */
         .header {
-            background-color: #1f2937;
+            background: #1f2937;
             text-align: center;
-            padding: 50px 20px;
-            margin-bottom: 40px;
+            padding: 40px 20px;
         }
         
         .header h1 {
@@ -33,76 +33,51 @@
             margin: 10px 0 0;
         }
         
-        .main-content {
+        /* Content */
+        .content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px;
         }
         
-        .subtitle {
-            text-align: center;
-            font-size: 32px;
-            color: #1f2937;
-            margin: 40px 0;
-        }
-        
+        /* Images */
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin: 40px 0;
+            padding: 20px;
         }
         
-        .image-container {
+        .image-wrap {
             aspect-ratio: 1;
             border-radius: 50%;
             overflow: hidden;
-            border: 3px solid #fff;
+            border: 2px solid #fff;
         }
         
-        .image-container img {
+        .image-wrap img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
         
-        .rental-info {
+        /* Text */
+        .info {
             text-align: center;
             color: #ff6600;
             font-size: 24px;
-            margin: 40px 0;
-        }
-        
-        .rental-info p {
-            margin: 10px 0;
-        }
-        
-        .contact-info {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 24px;
-        }
-        
-        .contact-info a {
-            color: #ff6600;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .furnished-finder-link {
-            text-align: center;
             margin: 30px 0;
         }
-
-        .furnished-finder-link a {
+        
+        /* Links */
+        .link {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .link a {
             color: #ff6600;
             text-decoration: none;
-            font-size: 18px;
         }
     </style>
 </head>
@@ -112,33 +87,39 @@
         <p>Your Home Away from Home in Utah</p>
     </div>
 
-    <div class="main-content">
-        <div class="rental-info">
-            <p>Mid-Term Rental for Traveling Professionals</p>
-            <p>13-26 Weeks</p>
+    <div class="content">
+        <div class="info">
+            Mid-Term Rental for Traveling Professionals<br>
+            13-26 Week Stays
         </div>
 
         <div class="image-grid">
-            <div class="image-container">
-                <img src="./images/exterior.jpg" alt="Property Exterior View">
+            <div class="image-wrap">
+                <img src="images/Exterior #18.jpg" alt="Exterior">
             </div>
-            <div class="image-container">
-                <img src="./images/living.jpg" alt="Living Room">
+            <div class="image-wrap">
+                <img src="images/Living Room.jpg" alt="Living Room">
             </div>
-            <div class="image-container">
-                <img src="./images/dining.jpg" alt="Dining Area">
+            <div class="image-wrap">
+                <img src="images/Dining Area.jpg" alt="Dining Area">
+            </div>
+            <div class="image-wrap">
+                <img src="images/Kitchen.jpg" alt="Kitchen">
+            </div>
+            <div class="image-wrap">
+                <img src="images/Entry.jpg" alt="Entry">
+            </div>
+            <div class="image-wrap">
+                <img src="images/Laundry.jpg" alt="Laundry">
             </div>
         </div>
 
-        <div class="furnished-finder-link">
-            <a href="https://www.furnishedfinder.com/property/354800_1" target="_blank">
-                View Our Property on Furnished Finder
-            </a>
+        <div class="link">
+            <a href="https://www.furnishedfinder.com/property/354800_1">View on Furnished Finder</a>
         </div>
 
-        <div class="contact-info">
-            <p>Contact Us</p>
-            <a href="mailto:Wade@longneck44.com">Wade@longneck44.com</a>
+        <div class="link">
+            <a href="mailto:Wade@longneck44.com">Contact: Wade@longneck44.com</a>
         </div>
     </div>
 </body>
